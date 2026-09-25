@@ -15,9 +15,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+flex-direction: column;
 }
 
-/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,6 +29,7 @@ body {
 }
 
 .Logo {
+  width: 80px;
   color: #fff;
   font-size: 22px;
   font-weight: bold;
@@ -52,7 +54,6 @@ body {
   text-decoration: underline;
 }
 
-/* HERO */
 .hero {
   display: flex;
   align-items: center;
@@ -69,7 +70,7 @@ body {
 
 .hero-text h1 {
   font-size: 32px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   color: #333;
 }
 
@@ -81,11 +82,7 @@ body {
 
 .hero-image {
   flex: 1 1 280px;
-}
-
-.hero-image img {
-  width: 100%;
-  border-radius: 8px;
+  width: 50px;
 }
 
 .btn-primary {
@@ -98,7 +95,6 @@ body {
   cursor: pointer;
 }
 
-/* PRODUK */
 .produk {
   padding: 40px 20px 60px;
 }
@@ -109,14 +105,12 @@ body {
   color: #E0172a;
 }
 
-/* GRID PRODUK */
 .grid-produk {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* KARTU */
 .kartu {
   display: flex;
   flex-direction: column;
@@ -153,7 +147,6 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER */
 .footer {
   display: flex;
   justify-content: space-between;
