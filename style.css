@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
 .navbar {
@@ -57,19 +57,20 @@ flex-direction: column;
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  justify-content: center;
+  gap: 40px;
   text-align: center;
-  padding: 60px 20px;
+  padding: 50px 20px;
   flex-wrap: wrap;
 }
 
 .hero-text {
   flex: 1 1 320px;
+  max-width: 450px;
 }
 
 .hero-text h1 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 15px;
   color: #333;
 }
@@ -81,9 +82,23 @@ flex-direction: column;
 }
 
 .hero-image {
-  flex: 1 1 280px;
-  width: 50px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+
 
 .btn-primary {
   display: inline-block;
@@ -122,6 +137,8 @@ flex-direction: column;
 
 .kartu img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
 }
@@ -173,3 +190,36 @@ flex-direction: column;
   color: white;
 }
 
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .grid-produk {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .grid-produk {
+    grid-template-columns: 1fr;
+  }
+
+}
